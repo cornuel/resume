@@ -1,0 +1,45 @@
+body {
+    background-color: #E4F9F5;
+}
+
+@font-face {
+    font-family: JetBrains;
+    src: url(/fonts/JetBrainsMono-Regular.ttf);
+ }
+
+@font-face {
+    font-family: JetBrains;
+    src: url(/fonts/JetBrainsMono-ExtraBold.ttf);
+    font-weight: bold;
+ }
+ 
+
+* {
+    font-family: JetBrains;
+}
+
+hr {
+    border-style: dotted none none;
+    border-width: 10px;
+    border-color: #30E3CA;
+    width: 5%;
+}
+
+h1 {
+    color: #40514E;
+
+}
+
+h3 {
+    color: #30E3CA;
+
+}
+
+table { 
+    border-spacing: 50px 10px;
+    border-collapse: separate;
+}
+
+td {
+    padding: 5px;
+}
