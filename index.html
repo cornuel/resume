@@ -3,56 +3,72 @@
     <head>
         <meta charset="utf-8">
         <title>Benjamin CORNUEL</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Grand+Hotel">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patrick+Hand">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <link rel="stylesheet" href="http://fonts.cdnfonts.com/css/brandon-grotesque-medium">
         <link rel="stylesheet" href="css/styles.css">
-        <link rel="icon" href="sparkles.svg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css">
+        <link rel="icon" href="svg/sparkles.svg">
     </head>
-
+    
     <body>
-        <header> <!--- TODO ---></header>
+        <header class="navbar_container">
+            <ul class="navbar">
+                <li class="exp"><a class="button" href=#h3-work-experience>Experiences</a></li>
+                <li class="education">Education</li>
+                <li class="stack">Skills</li>
+            </ul>
+        </header>
         <main>
             <img class= "benjamin_pic" src="img/benjamin.png"
                     alt="benjamin cornuel pp">
             <div class="benjamin_text">
-                <h1 class="name">Benjamin</h1>
-                <p>29 years</p>
-                <p>Paris</p>
+                <p class="name">Benjamin</p>
+                <p class="surname">CORNUEL</p>
+                <p>29 years, Paris</p>
                 <p><em>Seeking a new carreer opportunity</em></p>
             </div>
         </main>
 
-        <hr>
 
         <h3>About me</h3>
             <p>I am an experienced embedded software engineer.</p>
             <p>Over the last 4 years I have developed my skills for the Aeronautics Defense industry.</p>
             <p>I want to take upon new challenges and add skills to my arsenal as a <strong>back-end engineer</strong>.</p>
-        <h3>Work Experience</h3>
-        <table>
-            <thead>
-            <tr>
-                <th>Dates</th>
-                <th>Work</th>
-                <th>Location</th>
-            </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>2020-2022</td>
-                    <td>Embedded Software Engineer at <strong>MBDA</strong></td>
-                    <td><em>Le Plessis-Robinson</em></td>
-                </tr>
-                <tr>
-                    <td>2018-2020</td>
-                    <td>Embedded Software Engineer at <strong>Thales</strong></td>
-                    <td><em>Elancourt</em></td>
-                </tr>
-                <tr>
-                    <td>2017</td>
-                    <td>Internship at <strong>Zodiac Data Systems</strong></td>
-                    <td><em>Caen</em></td>
-                </tr>
-            </tbody>
-        </table>
+        
+
+        <h3 id="h3-work-experience">Work Experiences</h3>
+        <!--MBDA-->
+        <div class="work-exp">
+            <img class="logo" src="/svg/MBDA-Logo.svg"/>
+            <p class="title">Embedded Software Engineer at <strong>MBDA</strong></p>
+            <p class="date">2022-2020</p>
+            <p class="location"><em>Le Plessis-Robinson</em></p>
+            <p class="description">Mauris in tincidunt libero. Fusce eget molestie nisl, ac bibendum magna. Fusce euismod massa ut tellus accumsan pharetra. Sed et auctor velit. Donec a nibh dictum, placerat ante a, viverra enim. Donec at tincidunt sapien, non vulputate metus. Duis accumsan tempus lorem, et auctor orci feugiat ac. Fusce at cursus nunc. Quisque quis tempus enim.</p>
+            <p class="tags">C, Real time</p>
+        </div>
+        <!--Thales-->
+        <div class="work-exp">
+            <img class="logo" src="/svg/Thales-Logo.svg"/>
+            <p class="title">Embedded Software Engineer at <strong>Thales</strong></p>
+            <p class="date">2020-2018</p>
+            <p class="location"><em>Elancourt</em></p>
+            <p class="description">Sed porttitor diam lectus, eu feugiat lectus ullamcorper at. Nulla viverra felis lacinia sem gravida faucibus. Suspendisse potenti. Nam nulla ex, ultricies ut porttitor a, interdum nec nibh. Maecenas ultricies quam in dui rhoncus, sit amet consectetur mi rutrum. Suspendisse at semper nisi, suscipit blandit ex. In a porttitor eros, semper sollicitudin arcu. Mauris fringilla eget arcu ac varius. In sed augue consequat enim pretium scelerisque. Suspendisse potenti.</p>
+            <p class="tags">C, Real time</p>
+        </div>
+        <!--Zodiac-->
+        <div class="work-exp">
+            <img class="logo" src="/svg/Safran-Logo.svg"/>
+            <p class="title">Internship at <strong>Zodiac Data Systems</strong></p>
+            <p class="date">2017</p>
+            <p class="location"><em>Caen</em></p>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit velit arcu, ut bibendum mauris bibendum ut. Quisque tempor luctus tempor. Cras rutrum est ut justo aliquam, molestie tempor dolor ultricies. Aliquam semper elementum faucibus. In dictum lectus velit, a feugiat ligula vestibulum sed.</p>
+            <p class="tags">C, Beaglebone</p>
+        </div>
     <hr>
+    <script src="/js/script.js"></script>
     </body>
 </html>
