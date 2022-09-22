@@ -186,6 +186,7 @@ main.dark {
     -webkit-transition: background 200ms ease;
     transition: background 200ms ease;
     color: #eaeaea;
+    margin: 5px;
 }
 
 .light-button {
@@ -200,6 +201,7 @@ main.dark {
     -webkit-transition: background 200ms ease;
     transition: background 200ms ease;
     color: #40514E;
+    margin: 5px;
 }
 
 .name {
@@ -333,6 +335,14 @@ main.dark {
     h3 {
         font-size: 3em;
     }  
+
+    .dark-button {
+        font-size: 1em;
+    }
+
+    .light-button {
+        font-size: 1em;
+    }
 }
 
 /* shrink sur grand ecran */
