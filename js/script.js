@@ -1,8 +1,9 @@
 // Enable navbar
 
 const nav = document.querySelector(".navbar_container");
-let button = document.querySelector(".exp").addEventListener("click", navbar_clicked)
-
+let button_exp = document.querySelector(".exp").addEventListener("click", navbar_clicked)
+let button_edu = document.querySelector(".education").addEventListener("click", navbar_clicked)
+let button_skills = document.querySelector(".stack").addEventListener("click", navbar_clicked)
 let lastScrollY = window.scrollY;
 
 window.addEventListener("scroll", () => {
