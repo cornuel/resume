@@ -9,7 +9,7 @@ body {
     margin: 0;
     /*background-color: #E4F9F5;*/
     background: rgb(17,153,158);
-background: linear-gradient(336deg, rgba(17,153,158,1) 0%, rgba(48,227,202,1) 64%, rgba(228,249,245,1) 100%);
+    background: linear-gradient(336deg, rgba(17,153,158,1) 0%, rgba(48,227,202,1) 64%, rgba(228,249,245,1) 100%);
     color: #40514E;
     -webkit-transition: background-color 800ms ease;
     transition: background-color 800ms ease;
@@ -166,7 +166,8 @@ main.dark {
 }
 
 .benjamin_pic {
-    background: #30E3CA;
+    background: rgb(17,153,158);
+    background: linear-gradient(336deg, rgba(17,153,158,1) 0%, rgba(48,227,202,1) 64%, rgba(228,249,245,1) 140%);
     border-radius: 16px;
     width: 30vw;
     min-width: 2em;
