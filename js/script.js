@@ -22,12 +22,15 @@ if (localStorage.getItem('dark-mode') == 'dark') {
   // if the above is 'dark' then apply .dark to the body and main
   $('body').addClass('dark');  
   $('main').addClass('dark');
+  $('.benjamin_pic').addClass('dark');
+  $('.benjamin_text').addClass('dark');
   $('.navbar_container').addClass('dark');
   $('.logo_container').addClass('dark'); 
   $('.description').addClass('dark'); 
   $('.exp-container').addClass('dark');
   $('a').addClass('dark');
   $('li').addClass('dark');
+  $('h3').addClass('dark');
 
   // hide the 'dark' button
   $('.dark-button').hide();
@@ -41,12 +44,15 @@ $('.dark-button').on('click', function() {
 
     $('body').addClass('dark');
     $('main').addClass('dark');
+    $('.benjamin_pic').addClass('dark');
+    $('.benjamin_text').addClass('dark');
     $('.navbar_container').addClass('dark'); 
     $('.logo_container').addClass('dark');  
     $('.description').addClass('dark');  
     $('.exp-container').addClass('dark');
     $('a').addClass('dark');
     $('li').addClass('dark');
+    $('h3').addClass('dark');
 
     // set stored value to 'dark'
     localStorage.setItem('dark-mode', 'dark');
@@ -58,12 +64,15 @@ $('.dark-button').on('click', function() {
 
     $('body').removeClass('dark');
     $('main').removeClass('dark');
+    $('.benjamin_pic').removeClass('dark');
+    $('.benjamin_text').removeClass('dark');
     $('.navbar_container').removeClass('dark');
     $('.logo_container').removeClass('dark'); 
     $('.description').removeClass('dark'); 
     $('.exp-container').removeClass('dark');
     $('a').removeClass('dark');
     $('li').removeClass('dark');
+    $('h3').removeClass('dark');
 
     // set stored value to 'light'
     localStorage.setItem('dark-mode', 'light');   
