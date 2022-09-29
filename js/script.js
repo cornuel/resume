@@ -23,6 +23,9 @@ if (localStorage.getItem('dark-mode') == 'dark') {
   $('body').addClass('dark');  
   $('main').addClass('dark');
   $('.navbar_container').addClass('dark');
+  $('.logo_container').addClass('dark'); 
+  $('.description').addClass('dark'); 
+  $('.exp-container').addClass('dark');
   $('a').addClass('dark');
   $('li').addClass('dark');
 
@@ -38,7 +41,10 @@ $('.dark-button').on('click', function() {
 
     $('body').addClass('dark');
     $('main').addClass('dark');
-    $('.navbar_container').addClass('dark');  
+    $('.navbar_container').addClass('dark'); 
+    $('.logo_container').addClass('dark');  
+    $('.description').addClass('dark');  
+    $('.exp-container').addClass('dark');
     $('a').addClass('dark');
     $('li').addClass('dark');
 
@@ -53,6 +59,9 @@ $('.dark-button').on('click', function() {
     $('body').removeClass('dark');
     $('main').removeClass('dark');
     $('.navbar_container').removeClass('dark');
+    $('.logo_container').removeClass('dark'); 
+    $('.description').removeClass('dark'); 
+    $('.exp-container').removeClass('dark');
     $('a').removeClass('dark');
     $('li').removeClass('dark');
 
@@ -60,7 +69,8 @@ $('.dark-button').on('click', function() {
     localStorage.setItem('dark-mode', 'light');   
   });
 
-  // Enable navbar
+
+// Enable navbar
 
 let nav = document.querySelector("header");
 let button_exp = document.querySelector(".exp").addEventListener("click", navbar_clicked)
@@ -94,3 +104,23 @@ window.addEventListener("scroll", () => {
 function navbar_clicked() {
     nav.classList.replace("navbar_container", "navbar--hidden");
 }
+
+// animation on scroll
+
+function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 60;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", reveal);
