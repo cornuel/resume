@@ -27,6 +27,7 @@ if (localStorage.getItem('dark-mode') == 'dark') {
   $('.navbar_container').addClass('dark');
   $('.logo_container').addClass('dark'); 
   $('.description').addClass('dark'); 
+  $('.desc_tags_container').addClass('dark'); 
   $('.exp-container').addClass('dark');
   $('a').addClass('dark');
   $('li').addClass('dark');
@@ -49,6 +50,7 @@ $('.dark-button').on('click', function() {
     $('.navbar_container').addClass('dark'); 
     $('.logo_container').addClass('dark');  
     $('.description').addClass('dark');  
+    $('.desc_tags_container').addClass('dark');
     $('.exp-container').addClass('dark');
     $('a').addClass('dark');
     $('li').addClass('dark');
@@ -69,6 +71,7 @@ $('.dark-button').on('click', function() {
     $('.navbar_container').removeClass('dark');
     $('.logo_container').removeClass('dark'); 
     $('.description').removeClass('dark'); 
+    $('.desc_tags_container').removeClass('dark');
     $('.exp-container').removeClass('dark');
     $('a').removeClass('dark');
     $('li').removeClass('dark');
@@ -133,3 +136,14 @@ function reveal() {
   }
   
   window.addEventListener("scroll", reveal);
+
+// expand cards
+
+function expand(card) {
+  card.classList.toggle('desc--expanded');
+
+  // If card is not expanded after toggle, add 'unexpanded' class
+  if (!card.classList.contains('desc--expanded')) card.classList.toggle('desc--unexpanded');
+  // Else if card is expanded after toggle and still contains 'unexpanded' class, remove 'unexpanded'
+  else if (card.classList.contains('desc--expanded') && card.classList.contains('desc--unexpanded')) card.classList.toggle('desc--unexpanded');
+}
