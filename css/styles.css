@@ -465,6 +465,7 @@ main.dark {
 
 .skill_icon {
     opacity: 100%;
+    transition: all 0.5s;
 }
 
 .skill_icon:hover {
