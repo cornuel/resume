@@ -436,7 +436,7 @@ main.dark {
 
 .skillset_container {
     display:grid;
-    grid-template-columns: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 18vw);
     justify-content: center;
     padding-bottom: 10vw;
     gap: 2em;
@@ -646,6 +646,10 @@ main.dark {
 
     .cards_wrapper {
         grid-template-columns: repeat(3, calc(60% - 40px))
+    }
+
+    .skillset_container {
+        grid-template-columns: repeat(3, 10vw);
     }
 
     .skill_icon {
