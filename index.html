@@ -13,12 +13,12 @@
         <link rel="icon" href="svg/sparkles.svg">
     </head>
     
-    <body>
+    <div>
         <header class="navbar_container">
             <ul class="navbar">
                 <li class="exp"><a class="button" href=#h3-work-experience>Experiences</a></li>
                 <li class="education"><a class="button" href=#h3-education>Education</a></li>
-                <li class="stack"><a class="button" href=#h3-work-experience>Skills</a></li>
+                <li class="stack"><a class="button" href=#h3-skills>Skills</a></li>
             </ul>
         </header>
         <main>
@@ -27,93 +27,184 @@
                     <p class="name">Benjamin</p>
                     <p class="surname">CORNUEL</p>
                 </div>
-                <p>29 years, Paris</p>
-                <p><em>Seeking a new carreer opportunity</em></p>
-                <button class="dark-button"> Dark <i class="fa-solid fa-moon"></i></button>
+                <div class="years">
+                    <p><span>29 years, Paris</span></p>
+                </div>
+                <div class="about_text">
+                    <p><em>Seeking a new carreer opportunity as a full-stack engineer</em></p>
+                </div>
+                    <button class="dark-button"> Dark <i class="fa-solid fa-moon"></i></button>
                 <button class="light-button" hidden="hidden"> Light <i class="fa-solid fa-sun"></i></button>
             </div>
         </main>
 
-
-        <h3>About me</h3>
-        <div class="exp-container reveal fade-bottom">
-            <div class="about-me">
-                <div class="pic">
-                <img class= "benjamin_pic" src="img/benjamin_pp.png"
-                    alt="benjamin cornuel pp">
-                </div>
-                    <div>
-                        <p>I am an experienced embedded software engineer.</p>
-                        <p>Over the last 4 years I have developed my skills for the Aeronautics Defense industry.</p>
-                        <p>I want to take upon new challenges and add skills to my arsenal as a <strong>back-end engineer</strong>.</p>
+        <div class="container">
+            <h3>About me</h3>
+            <div class="exp-container reveal fade-bottom">
+                <div class="about-me">
+                    <div class="pic">
+                    <img class= "benjamin_pic" src="img/benjamin_pp.png"
+                        alt="benjamin cornuel pp">
                     </div>
+                        <div>
+                            <p>I am an experienced embedded software engineer.</p>
+                            <p>Over the last 4 years I have developed my skills for the Aeronautics Defense industry.</p>
+                            <p>I want to take upon new challenges and add skills to my arsenal as a <strong>full-stack engineer</strong>.</p>
+                        </div>
+                </div>
             </div>
         </div>
 
-        <h3 id="h3-work-experience">Work Experiences</h3>
-        <!--MBDA-->
+        <div class="container">
+            <h3 id="h3-work-experience">Work Experiences</h3>
+            <!--MBDA-->
+            <div class="cards_wrapper">
+                <div class="exp-container reveal fade-bottom">
+                    <div class="logo_container">
+                        <img class="logo" src="/svg/Airbus-Logo.svg"/>
+                    </div>
+                    <div class="work-exp">
+                        <p class="title">Embedded Software Engineer at <strong>Airbus Defense and Space</strong></p>
+                        <p class="date">2022 - 2020</p>
+                        <p class="location"><em>Le Plessis-Robinson</em></p>
+                        <div class="desc_tags_container">
+                            <div class="description">
+                                <p>I developed <strong>embedded software</strong> in a complex system.</p>
+                                <p>I was tasked to <strong>develop features</strong> according to the system specification document.</p> 
+                                <p>To carry out this mission, I <strong>developed interfaces</strong> to communicate with various equipments. Then I <strong>integrated</strong> the different <strong>algorithms</strong> to fit the system needs.
+                                <p>I wrote code according to the system specification, I tested it, and I <strong>benchmarked</strong> algorithms (execution time, generating output with fixed input) a process known as <strong>industrialization</strong>.</p>
+                                <p>The best parts of this job were to be able to work the software on the <strong>test bench</strong>, reinforce my software knowledge and learning new skills such as <strong>scripting in Python</strong>.</p>
+                            </div>
+                            <p class="tags">DO178B, LINUX, C, PYTHON, BASH, IBM RTC, MISRA</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Thales-->
+                <div class="exp-container reveal fade-bottom">
+                    <div class="logo_container">
+                        <img class="logo" src="/svg/Thales-Logo.svg"/>
+                    </div>
+                    <div class="work-exp">
+                        <p class="title">Embedded Software Engineer at <strong>Thales</strong></p>
+                        <p class="date">2020 - 2018</p>
+                        <p class="location"><em>Elancourt</em></p>
+                        <div class="desc_tags_container">
+                            <div class="description">
+                                <p>I developed <strong>embedded software</strong> for one of the component inside the <strong>RBE2 radar</strong> embedded in <strong>Rafale</strong> aircraft.</p>
+                                <p>As part of an <strong>agile scrum</strong> team I was tasked to <strong>develop features</strong> according to the system specification document.</p> 
+                                <p>To carry out this task, I wrote the <strong>software specification,</strong> developed a lot of new features and adjust some, thereafter <strong>unit tested</strong> the function, verify <strong>continuous integration</strong> to finally deliver the work.</p>
+                                <p>The best part of this job was to be able to grasp the <strong>complexity</strong> of the system and get to <strong>work with every team involved</strong>.</p>
+                            </div>
+                            <p class="tags">RBE2, DO178B, LINUX, C, BASH, DOORS, GIT, AGILE SCRUM, JIRA, IBM RTRT, CODE QUALITY</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Zodiac-->
+                <div class="exp-container reveal fade-bottom">
+                    <div class="logo_container">
+                        <img class="logo" src="/svg/Safran-Logo.svg"/>
+                    </div>
+                    <div class="work-exp">
+                        <p class="title">Internship at <strong>Zodiac Data Systems</strong></p>
+                        <p class="date">2018</p>
+                        <p class="location"><em>Caen</em></p>
+                        <div class="desc_tags_container">
+                            <div class="description">
+                                <p>I <strong>redesigned</strong> the code embedded in a ground antenna <strong>from scratch</strong>. The goal was to update the system with a modern and fairly cheaper processor unit that the <strong>Beaglebone Black</strong> is. Its purpose is to <strong>track</strong> various <strong>flying objects</strong> such as plane or helicopter and get a set of telemetry data.</p>
+                                <p>I developped <strong>read/write libraries</strong> for the actuators involved such as the motor, incremental encoder. These libraries were entertwined with <strong>linux drivers</strong> to control the <strong>antenna orientation</strong>.</p> 
+                                <p>I wrote <strong>Assembly</strong> code in the beaglebone <strong>PRUs</strong> (programmable real time unit). It was the heart of the project to ensure right <strong>sampling</strong> and great <strong>response time</strong> of the <strong>control loop</strong>.</p>
+                            </div>
+                            <p class="tags">ANTENNA, BEAGLEBONE, PRU, LINUX, ASM, C, REAL TIME, CONTROL LOOP, SPI BUS, DRIVERS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <hr>
+    </div>
+    <div class="container">
+        <h3 id="h3-education">Education</h3>
         <div class="cards_wrapper">
-            <div onclick="expand(this)" class="exp-container reveal fade-bottom">
+            <div class="exp-container reveal fade-bottom">
                 <div class="logo_container">
-                    <img class="logo" src="/svg/MBDA-Logo.svg"/>
+                    <img class="logo" src="/svg/Esix-Logo.svg"/>
                 </div>
                 <div class="work-exp">
-                    <p class="title">Embedded Software Engineer at <strong>MBDA</strong></p>
-                    <p class="date">2022-2020</p>
-                    <p class="location"><em>Le Plessis-Robinson</em></p>
-                    <div class="desc_tags_container">
-                        <div class="description">
-                            <p>I developed <strong>embedded software</strong> in a complex system.</p>
-                            <p>As part of an <strong>agile scrum</strong> team I was tasked to <strong>develop features</strong> according to the system specification document.</p> 
-                            <p>To carry out this mission, an early task was to <strong>develop libraries</strong> to communicate with various equipments. Then I <strong>integrated</strong> the different <strong>algorithms</strong> to fit the software needs. It includes <strong>benchmarking</strong> algorithms (execution time, generating output with fixed input). This process is known as <strong>industrialization</strong>.</p>
-                            <p>The best parts of this job were to be able to work the software on the <strong>test bench</strong>, reinforce my software knowledge and learning new skills such as <strong>scripting in Python</strong>.</p>
-                        </div>
-                        <p class="tags">MISSILE, DO178B, LINUX, C, PYTHON, BASH, IBM RTC, MISRA, AGILE</p>
-                    </div>
-                </div>
-            </div>
-            <!--Thales-->
-            <div onclick="expand(this)" class="exp-container reveal fade-bottom">
-                <div class="logo_container">
-                    <img class="logo" src="/svg/Thales-Logo.svg"/>
-                </div>
-                <div class="work-exp">
-                    <p class="title">Embedded Software Engineer at <strong>Thales</strong></p>
-                    <p class="date">2020-2018</p>
-                    <p class="location"><em>Elancourt</em></p>
-                    <div class="desc_tags_container">
-                        <div class="description">
-                            <p>I developed <strong>embedded software</strong> for one of the component inside the <strong>RBE2 radar</strong> embedded in <strong>Rafale</strong> aircraft.</p>
-                            <p>As part of an <strong>agile scrum</strong> team I was tasked to <strong>develop features</strong> according to the system specification document.</p> 
-                            <p>To carry out this task, I firstly had to write the <strong>software specification</strong> then develop the said feature, thereafter <strong>unit tested</strong> the function, verify <strong>continuous integration</strong> to finally deliver the work.</p>
-                            <p>The best part of this job was to be able to grasp the <strong>complexity</strong> of the system and get to <strong>work with every team involved</strong>.</p>
-                        </div>
-                        <p class="tags">RBE2, DO178B, LINUX, C, BASH, DOORS, GIT, AGILE SCRUM, JIRA, IBM RTRT, CODE QUALITY</p>
-                    </div>
-                </div>
-            </div>
-            <!--Zodiac-->
-            <div onclick="expand(this)" class="exp-container reveal fade-bottom">
-                <div class="logo_container">
-                    <img class="logo" src="/svg/Safran-Logo.svg"/>
-                </div>
-                <div class="work-exp">
-                    <p class="title">Internship at <strong>Zodiac Data Systems</strong></p>
-                    <p class="date">2018</p>
+                    <p class="title">Embedded Systems Engineer Diploma at <strong>Esix Normandie</strong></p>
+                    <p class="date">2018 - 2015</p>
                     <p class="location"><em>Caen</em></p>
-                    <div class="desc_tags_container">
-                        <div class="description">
-                            <p>I <strong>redesigned</strong> the code embedded in a ground antenna <strong>from scratch</strong>. The goal was to update the system with a modern and fairly cheaper processor unit that the <strong>Beaglebone Black</strong> is. Its purpose is to <strong>track</strong> various <strong>flying objects</strong> such as plane or helicopter and get a set of telemetry data.</p>
-                            <p>The work primarly consisted of developping <strong>read/write libraries</strong> for the actuators involved such as the motor, incremental encoder. These libraries were entertwined with <strong>linux drivers</strong> to control the <strong>antenna orientation</strong>.</p> 
-                            <p>The use of <strong>PRU</strong> (programmable real time unit) was the heart of the project to ensure right <strong>sampling</strong> and great <strong>response time</strong> of the <strong>control loop</strong>.</p>
+                    <div class=" bulletpoint_container">
+                        <div class="dev_esix">
+                            <p><strong>Software Development</strong></p>
+                            <ul class="dev_bulletpoint">
+                                <li>Embedded Linux</li>
+                                <li>Microcontroler</li>
+                                <li>Android</li>
+                                <li>FPGA</li>
+                            </ul>
                         </div>
-                        <p class="tags">ANTENNA, BEAGLEBONE, PRU, LINUX, ASM, C, REAL TIME, CONTROL LOOP, SPI BUS, DRIVERS</p>
+                        <div class="dev_esix">
+                            <p><strong>Misc</strong></p>
+                            <ul class="dev_bulletpoint">
+                                <li>Real-time OS</li>
+                                <li>Embedded electronics</li>
+                                <li>OS architecture</li>
+                                <li>Project Management</li>
+                            </ul>
+                        </div>
                     </div>
+                </div>
+            </div>
+            <div class="exp-container reveal fade-bottom">
+                <div class="logo_container">
+                    <img class="logo" src="/svg/Thuillier-Logo.svg"/>
+                </div>
+                <div class="work-exp">
+                    <p class="title">Classe préparatoire at <strong>Lycée Louis Thuillier</strong></p>
+                    <p class="date">2015 - 2012</p>
+                    <p class="location"><em>Amiens</em></p>
+                    <p style="justify-text:center">
+                        Technologie et Sciences Industrielles
+                    </p>
+                </div>
+            </div>
+            <div class="exp-container reveal fade-bottom">
+                <div class="logo_container">
+                    <img class="logo" src="/svg/Branly-Logo.png"/>
+                </div>
+                <div class="work-exp">
+                    <p class="title">Baccalauréat STI at <strong>Lycée Edouard Branly</strong></p>
+                    <p class="date">2012 - 2010</p>
+                    <p class="location"><em>Amiens</em></p>
+                    <p style="justify-text:center">
+                        Génie Electrotechnique
+                    </p>
+                    <p style="justify-text:center">
+                        with Honors
+                    </p>
                 </div>
             </div>
         </div>
-    <hr>
-    <h3 id="h3-education">Education</h3>
+    </div>
+    <div class="container">
+        <h3 id="h3-skills">Skills</h3>
+        <div class="skillset_container">
+            <img class="skill_icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+            <img class="skill_icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
+            <img class="skill_icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+            <img class="skill_icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+            <img class="skill_icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+            <img class="skill_icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+            <img class="skill_icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
+            <img class="skill_icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />  
+        </div>
+        <h4>Currently learning</h4>
+        <div class="skillset_container">
+            <img class="skill_icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+            <img class="skill_icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" />  
+            <img class="skill_icon" style="filter:invert(100%)" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" />
+        </div>
+    </div>
+    </body>
     <script src="https://kit.fontawesome.com/ae6943bb4a.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="/js/script.js"></script>

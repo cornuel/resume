@@ -29,9 +29,11 @@ if (localStorage.getItem('dark-mode') == 'dark') {
   $('.description').addClass('dark'); 
   $('.desc_tags_container').addClass('dark'); 
   $('.exp-container').addClass('dark');
+  $('.skill_icon').addClass('dark');
   $('a').addClass('dark');
   $('li').addClass('dark');
   $('h3').addClass('dark');
+  $('h4').addClass('dark');
 
   // hide the 'dark' button
   $('.dark-button').hide();
@@ -52,9 +54,11 @@ $('.dark-button').on('click', function() {
     $('.description').addClass('dark');  
     $('.desc_tags_container').addClass('dark');
     $('.exp-container').addClass('dark');
+    $('.skill_icon').addClass('dark');
     $('a').addClass('dark');
     $('li').addClass('dark');
     $('h3').addClass('dark');
+    $('h4').addClass('dark');
 
     // set stored value to 'dark'
     localStorage.setItem('dark-mode', 'dark');
@@ -73,9 +77,11 @@ $('.dark-button').on('click', function() {
     $('.description').removeClass('dark'); 
     $('.desc_tags_container').removeClass('dark');
     $('.exp-container').removeClass('dark');
+    $('.skill_icon').removeClass('dark');
     $('a').removeClass('dark');
     $('li').removeClass('dark');
     $('h3').removeClass('dark');
+    $('h4').removeClass('dark');
 
     // set stored value to 'light'
     localStorage.setItem('dark-mode', 'light');   
@@ -135,15 +141,20 @@ function reveal() {
     }
   }
   
-  window.addEventListener("scroll", reveal);
+window.addEventListener("scroll", reveal);
 
-// expand cards
 
-function expand(card) {
-  card.classList.toggle('desc--expanded');
+const element = document.querySelectorAll(".exp-container");
 
-  // If card is not expanded after toggle, add 'unexpanded' class
-  if (!card.classList.contains('desc--expanded')) card.classList.toggle('desc--unexpanded');
-  // Else if card is expanded after toggle and still contains 'unexpanded' class, remove 'unexpanded'
-  else if (card.classList.contains('desc--expanded') && card.classList.contains('desc--unexpanded')) card.classList.toggle('desc--unexpanded');
-}
+const mouseMoveHandler = function (e) {
+  element.style.cursor = 'grabbing';
+  element.style.userSelect = 'none';
+
+  // How far the mouse has been moved
+  const dx = e.clientX - pos.x;
+  const dy = e.clientY - pos.y;
+
+  // Scroll the element
+  element.scrollTop = pos.top - dy;
+  element.scrollLeft = pos.left - dx;
+};
