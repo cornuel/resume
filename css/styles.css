@@ -475,6 +475,8 @@ main.dark {
 }
 
 .skill_icon {
+    max-height: 5rem; /* 80px */
+    max-width: 5rem;
     opacity: 100%;
     transition: all 0.5s;
 }
