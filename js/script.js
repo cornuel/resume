@@ -1,3 +1,12 @@
+// fix iphone safari users
+const appHeight = () => {
+  const doc = document.documentElement
+  doc.style.setProperty('--app-height', `${window.innerHeight}px`)
+}
+window.addEventListener('resize', appHeight)
+appHeight()
+
+
 // DARK MODE
 var darkMode;
 
