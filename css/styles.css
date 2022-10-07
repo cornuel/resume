@@ -449,10 +449,10 @@ main.dark {
 
 .skillset_container {
     display:grid;
-    grid-template-columns: repeat(3, 18vw);
+    grid-template-columns: repeat(3, 5rem);
     justify-content: center;
-    padding-bottom: 10vw;
-    gap: 1em;
+    padding-bottom: 1rem;
+    gap: 1rem;
 }
 
 .dev_bulletpoint {
