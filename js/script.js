@@ -35,6 +35,7 @@ if (localStorage.getItem('dark-mode') == 'dark') {
   $('.benjamin_text').addClass('dark');
   $('.navbar_container').addClass('dark');
   $('.logo_container').addClass('dark'); 
+  $('.date').addClass('dark'); 
   $('.description').addClass('dark'); 
   $('.desc_tags_container').addClass('dark'); 
   $('.exp-container').addClass('dark');
@@ -59,7 +60,8 @@ $('.dark-button').on('click', function() {
     $('.benjamin_pic').addClass('dark');
     $('.benjamin_text').addClass('dark');
     $('.navbar_container').addClass('dark'); 
-    $('.logo_container').addClass('dark');  
+    $('.logo_container').addClass('dark');
+    $('.date').addClass('dark');
     $('.description').addClass('dark');  
     $('.desc_tags_container').addClass('dark');
     $('.exp-container').addClass('dark');
@@ -82,7 +84,8 @@ $('.dark-button').on('click', function() {
     $('.benjamin_pic').removeClass('dark');
     $('.benjamin_text').removeClass('dark');
     $('.navbar_container').removeClass('dark');
-    $('.logo_container').removeClass('dark'); 
+    $('.logo_container').removeClass('dark');
+    $('.date').removeClass('dark'); 
     $('.description').removeClass('dark'); 
     $('.desc_tags_container').removeClass('dark');
     $('.exp-container').removeClass('dark');
