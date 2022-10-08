@@ -430,7 +430,6 @@ main.dark {
 }
 
 .exp-container.dark:hover {
-    transform: scale(1.06);
     -webkit-transition: background-color 2s ease;
     transition: all 0.5s;
 }
