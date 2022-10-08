@@ -155,7 +155,7 @@ li::before {
     font-family: "Font Awesome 6 Free";
     font-weight:900;
     font-size:3vw;
-    color: #2ac6b1;
+    color: #30E3CA;
     position: relative;
     vertical-align:auto;
     margin-right: .3rem;
@@ -222,10 +222,9 @@ main.dark {
 }
 
 .benjamin_text{
-    background: -webkit-linear-gradient(#30E3CA, #11999E);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color:#30E3CA;
+    text-shadow: 1px 1px 0 rgb(255, 255, 255), -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255),
+    -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
     position: relative;
     padding-top: 9em;
     padding-bottom: 4em;
@@ -235,8 +234,10 @@ main.dark {
 }
 
 .benjamin_text.dark {
+    text-shadow: none;
     -webkit-transition: background-color 800ms ease;
     transition: background-color 800ms ease;
+    filter: drop-shadow(.1rem .1rem rgb(255, 255, 255));
 }
 
 .years {
@@ -251,10 +252,7 @@ main.dark {
 
 .about_text span{
     font-weight: bolder;
-    background: -webkit-linear-gradient(#30E3CA, #11999E);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color:#2ac6b1;
 }
 
 .gradient-text {
@@ -269,7 +267,7 @@ main.dark {
     bottom:0;
     left: 0;
     border: 1px solid #40514E;
-    padding: 0.5rem;
+    padding: 0.3rem;
     font-size: 1em;
     background: #40514E;
     border-radius: 5px;
@@ -284,7 +282,7 @@ main.dark {
     bottom:0;
     left: 0;
     border: 1px solid #40514E;
-    padding: 0.5rem;
+    padding: 0.3rem;
     font-size: 1em;
     background: #ffffff;
     border-radius: 5px;
