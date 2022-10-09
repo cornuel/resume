@@ -47,7 +47,6 @@ h3 {
     font-size: 2em;
     color: #40514E;
     padding-top: .5em;
-    margin-bottom: 1.5em;
 
 }
 
@@ -503,7 +502,15 @@ main.dark {
 }
 
 .active.fade-bottom {
-    animation: fade-bottom .8s backwards;
+    animation: fade-bottom .8s ease-in;
+}
+
+.active.fade-left {
+    animation: fade-left .8s ease-in;
+}
+
+.active.fade-right {
+    animation: fade-right .8s ease-in;
 }
 
 .skill_icon {
@@ -532,33 +539,6 @@ main.dark {
     justify-content: center;
 }
 
-@-webkit-keyframes sdb05 {
-    0% {
-        -webkit-transform: rotate(-135deg) translate(0, 0);
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        -webkit-transform: rotate(-135deg) translate(-20px, 20px);
-        opacity: 0;
-    }
-    }
-@keyframes sdb05 {
-    0% {
-        transform: rotate(-135deg) translate(0, 0);
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        transform: rotate(-135deg) translate(-20px, 20px);
-        opacity: 0;
-    }
-}
-
 @keyframes fade-bottom {
     0% {
       transform: translateY(50px);
@@ -566,6 +546,28 @@ main.dark {
     }
     100% {
       transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+@keyframes fade-left {
+    from {
+      transform: translateX(-50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+@keyframes fade-right {
+    0% {
+      transform: translateX(50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
       opacity: 1;
     }
 }

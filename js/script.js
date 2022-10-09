@@ -122,11 +122,11 @@ window.addEventListener("scroll", () => {
 
     //console.log(darkMode);
     if (lastScrollY < window.scrollY) {
-        nav.classList.replace("navbar_container", "navbar--hidden");
-    }
-    else{
+      nav.classList.replace("navbar_container", "navbar--hidden");
+      }
+      else{
         nav.classList.replace("navbar--hidden", "navbar_container");
-    }
+      }
 
     lastScrollY = window.scrollY
 });
