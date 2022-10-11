@@ -39,6 +39,8 @@ if (localStorage.getItem('dark-mode') == 'dark') {
   $('.description').addClass('dark'); 
   $('.desc_tags_container').addClass('dark'); 
   $('.exp-container').addClass('dark');
+  $('.hobby').addClass('dark');
+  $('.icon').addClass('dark');
   $('.skill_icon').addClass('dark');
   $('a').addClass('dark');
   $('li').addClass('dark');
@@ -65,6 +67,8 @@ $('.dark-button').on('click', function() {
     $('.description').addClass('dark');  
     $('.desc_tags_container').addClass('dark');
     $('.exp-container').addClass('dark');
+    $('.hobby').addClass('dark');
+    $('.icon').addClass('dark');
     $('.skill_icon').addClass('dark');
     $('a').addClass('dark');
     $('li').addClass('dark');
@@ -89,6 +93,8 @@ $('.dark-button').on('click', function() {
     $('.description').removeClass('dark'); 
     $('.desc_tags_container').removeClass('dark');
     $('.exp-container').removeClass('dark');
+    $('.hobby').removeClass('dark');
+    $('.icon').removeClass('dark');
     $('.skill_icon').removeClass('dark');
     $('a').removeClass('dark');
     $('li').removeClass('dark');

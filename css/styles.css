@@ -597,6 +597,12 @@ main.dark {
     transition: all 0.5s;
 }
 
+.hobby.dark {
+    border: solid 1px #ffffff;
+    background: rgb(17,153,158);
+    background: linear-gradient(336deg, rgba(17,153,158,1) 0%, rgba(48,227,202,1) 64%);
+}
+
 .hobby:hover {
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
     transform: scale(1.03);
@@ -616,13 +622,21 @@ main.dark {
     content: "\f025";
 }
 
-.singer-icon {
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin-top:.5em;
+.singer-icon:before {
+    font-family: "Font Awesome 6 Free";
+    font-weight:900;
+    font-size:2em;
+    color: #30E3CA;
+    content: "\f3c9";
 }
 
+.icon.dark:before {
+    color:#ffffff;
+}
+
+footer {
+
+}
 @keyframes fade {
     0% {
       opacity: 0;
