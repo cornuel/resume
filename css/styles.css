@@ -688,7 +688,7 @@ footer li{
     display: flex;
 }
 .icons a:hover{
-    color: #30E3CA;
+    background-color: #30E3CA;
     transition: 0.5s;
 }
 
