@@ -68,7 +68,6 @@ h4 {
     top: 0;
     z-index: 100;
     position: fixed;
-    min-height: 2.5em;
     width: 100%;
     display:flexbox;
     transition: transform .2s;
@@ -408,12 +407,13 @@ main.dark {
 }
 
 .location {
-    font-weight: bold;
     grid-area: location;
 }
 
 .location::before {
+    font-weight: bold;
     font-family: "Font Awesome 6 Free";
+    margin-right: .5em;
     color:#11999E;
     content:"\f3c5";
     font-size: 14px;
