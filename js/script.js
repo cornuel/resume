@@ -42,6 +42,8 @@ if (localStorage.getItem('dark-mode') == 'dark') {
   $('.hobby').addClass('dark');
   $('.icon').addClass('dark');
   $('.skill_icon').addClass('dark');
+  $('footer').addClass('dark');
+  $('.icons').addClass('dark');
   $('a').addClass('dark');
   $('li').addClass('dark');
   $('h3').addClass('dark');
@@ -70,6 +72,8 @@ $('.dark-button').on('click', function() {
     $('.hobby').addClass('dark');
     $('.icon').addClass('dark');
     $('.skill_icon').addClass('dark');
+    $('footer').addClass('dark');
+    $('.icons').addClass('dark');
     $('a').addClass('dark');
     $('li').addClass('dark');
     $('h3').addClass('dark');
@@ -96,6 +100,8 @@ $('.dark-button').on('click', function() {
     $('.hobby').removeClass('dark');
     $('.icon').removeClass('dark');
     $('.skill_icon').removeClass('dark');
+    $('footer').removeClass('dark');
+    $('.icons').removeClass('dark');
     $('a').removeClass('dark');
     $('li').removeClass('dark');
     $('h3').removeClass('dark');
