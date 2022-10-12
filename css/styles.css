@@ -211,7 +211,6 @@ main {
     overflow: hidden;
     width: 100vw;
     height: 100vh;
-    height: var(--app-height);
     border-radius: .2rem;
     -webkit-transition: background-color 800ms ease;
     transition: background-color 800ms ease;
@@ -326,14 +325,14 @@ main.dark {
 
 .name {
     font-family: "Pacifico";
-    font-size: 5em;
+    font-size: 4em;
     line-height:0%;
     padding-bottom: .3em;
 }
 
 .surname {
     font-family: "Josefin Sans";
-    font-size: 4.5rem;
+    font-size: 5.5rem;
     line-height:0%;
     margin-bottom: .5em;
 }
@@ -522,6 +521,7 @@ main.dark {
     display:grid;
     grid-template-columns: repeat(3, 5rem);
     justify-content: center;
+    justify-items: center;
     padding-bottom: 1rem;
     gap: 1rem;
 }
@@ -789,51 +789,6 @@ footer li{
 
 @media only screen and (min-width: 700px){
 
-    .navbar_container {
-        display: flex;
-    }
-
-    .interests:before{
-        content: none;
-    }
-
-    .interests:after {
-        content:"\f004";
-    }
-
-    .stack:after {
-        content: none;
-    }
-    
-    .stack:before{
-        content: "\f5fd";
-    }
-
-    .navbar.left {
-        justify-content: flex-start;
-    }
-
-    .navbar.right {
-        justify-content: flex-end;
-    }
-
-    li {
-        margin: 0 1em;
-    }
-
-    .interests_container {
-        display:flex;
-        justify-content: center;
-        gap: 2em;
-        margin-right: 10vw;
-        margin-left: 10vw;
-    }
-    
-
-}
-
-@media only screen and (min-device-width: 700px){
-
     main {
         min-height: 50em;
     }
@@ -861,11 +816,11 @@ footer li{
     }
 
     .name {
-        font-size: 13vw;
+        font-size: 10vw;
     }
 
     .surname {
-        font-size: 12vw;
+        font-size: 12.5vw;
     }
 
     .navbar {
@@ -929,10 +884,51 @@ footer li{
         opacity: 80%;
     }
 
+    .navbar_container {
+        display: flex;
+    }
+
+    .interests:before{
+        content: none;
+    }
+
+    .interests:after {
+        content:"\f004";
+    }
+
+    .stack:after {
+        content: none;
+    }
+    
+    .stack:before{
+        content: "\f5fd";
+    }
+
+    .navbar.left {
+        justify-content: flex-start;
+    }
+
+    .navbar.right {
+        justify-content: flex-end;
+    }
+
+    li {
+        margin: 0 1em;
+    }
+
+    .interests_container {
+        display:flex;
+        justify-content: center;
+        gap: 2em;
+        margin-right: 10vw;
+        margin-left: 10vw;
+    }
+    
+
 }
 
 /* shrink sur grand ecran */
-@media only screen and (min-device-width: 2000px){
+@media only screen and (min-width: 2000px){
     
     body {
         padding-left: 15vw;
@@ -947,9 +943,18 @@ footer li{
     .navbar_container.dark {
         width: 70vw;
     }
+    
+    .name {
+        font-size: 8vw;
+    }
+
+    .surname {
+        font-size: 9.5vw;
+    }
 
     main {
-        height: auto;
+        width: 70vw;
+        height: 100vh;
     }
 
     .cards_wrapper {
