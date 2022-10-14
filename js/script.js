@@ -170,18 +170,36 @@ function reveal() {
   
 window.addEventListener("scroll", reveal);
 
+// Cards can be grabbed
 
-const element = document.querySelectorAll(".exp-container");
+function grabCards(slider){
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+  slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    slider.classList.add('active');
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+  });
+  slider.addEventListener('mouseleave', () => {
+    isDown = false;
+    slider.classList.remove('active');
+  });
+  slider.addEventListener('mouseup', () => {
+    isDown = false;
+    slider.classList.remove('active');
+  });
+  slider.addEventListener('mousemove', (e) => {
+    if(!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 6;
+    slider.scrollLeft = scrollLeft - walk;
+    console.log(walk);
+  });
+}
 
-const mouseMoveHandler = function (e) {
-  element.style.cursor = 'grabbing';
-  element.style.userSelect = 'none';
+const sliders = document.querySelectorAll('.cards_wrapper');
 
-  // How far the mouse has been moved
-  const dx = e.clientX - pos.x;
-  const dy = e.clientY - pos.y;
-
-  // Scroll the element
-  element.scrollTop = pos.top - dy;
-  element.scrollLeft = pos.left - dx;
-};
+sliders.forEach(slider => grabCards(slider));

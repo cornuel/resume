@@ -873,8 +873,20 @@ footer li{
     }
 
     .cards_wrapper {
-        grid-template-columns: repeat(3, calc(80% - 1em))
+        position: relative;
+        grid-template-columns: repeat(3, calc(60% - 1em));
+        will-change: transform;
+        user-select: none;
+        cursor: pointer;
+        overflow-x: scroll;
+        overflow-y: hidden;
     }
+
+    .cards_wrapper.active {
+        cursor: grabbing;
+        cursor: -webkit-grabbing;
+        transform: scale(1);
+      }
 
     .skillset_container {
         grid-template-columns: repeat(3, max(8vw, 80px));
