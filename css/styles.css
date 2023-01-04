@@ -519,7 +519,7 @@ main.dark {
 
 .skillset_container {
     display:grid;
-    grid-template-columns: repeat(3, 5rem);
+    grid-template-columns: repeat(4, 5rem);
     justify-content: center;
     justify-items: center;
     padding-bottom: 1rem;
